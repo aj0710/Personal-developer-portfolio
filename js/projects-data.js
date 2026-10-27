@@ -56,6 +56,33 @@ const projectsData = [
         "Zero framework bloat with instant first contentful paint (FCP) and deployment on Vercel"
       ]
     }
+  },
+  {
+    id: "personal-developer-portfolio",
+    title: "Personal Developer Portfolio & Design System",
+    category: "frontend",
+    badge: "Design Tokens & Glassmorphism",
+    summary: "Modern personal developer portfolio built with semantic HTML5, pure CSS3 design tokens, ambient glassmorphism, dynamic project filtering, case study architecture modals, and automated CI/CD pipeline.",
+    image: "assets/images/portfolio.jpg",
+    tags: ["Semantic HTML5", "CSS3 Tokens", "Vanilla JavaScript (ES6+)", "Glassmorphism", "Vercel", "GitHub Actions"],
+    demoUrl: "https://ajay-developer-portfolio.vercel.app/",
+    githubUrl: "https://github.com/aj0710/Personal-developer-portfolio",
+    details: {
+      overview: "Ajay.dev is a high-performance personal developer portfolio and component showcase engineered with pure semantic HTML5, modern vanilla CSS3 design tokens, and modular ES6+ JavaScript. Designed to deliver an unforgettable first impression, it features persistent dual dark/light theming, an interactive developer terminal with live JSON telemetry, dynamic project category filtering, interactive case study architecture modals, and a validated contact hub.",
+      problem: "Heavy SPA frameworks add massive JavaScript bundles and hydration delays to simple developer portfolios, resulting in sluggish first paint times on mobile devices.",
+      architecture: [
+        "Lightweight Vanilla JavaScript ES6+ architecture delivering near-instant 100/100 Lighthouse performance without runtime framework overhead.",
+        "Centralized CSS custom property design token system with HSL colors, responsive clamp typography, and ambient glassmorphic elevations.",
+        "Dynamic client-side dataset model powering responsive category filtering, interactive case study modals, and spotlight hover physics.",
+        "Production-grade automated CI/CD workflows integrated with GitHub Actions and Vercel edge deployment."
+      ],
+      highlights: [
+        "Interactive Case Study architecture modal with technical deep-dives",
+        "Dynamic theme switching (Dark & Light mode) with localStorage state persistence",
+        "Interactive developer terminal bento card and typewriter role animation",
+        "100% mobile-responsive slide-out navigation drawer and touch-friendly UI"
+      ]
+    }
   }
 ];
 

@@ -107,6 +107,7 @@ The portfolio showcases real-world, open-source projects built and maintained by
 | :--- | :--- | :--- | :--- | :--- |
 | **[TaskFlow Pro](https://taskflow-pro-red.vercel.app/)** | [Live Preview](https://taskflow-pro-red.vercel.app/) | [aj0710/Taskflow-Pro](https://github.com/aj0710/Taskflow-Pro) | Vanilla JS (ES6+), HTML5, CSS3, Web Audio API, Canvas, LocalStorage | Executive-grade productivity suite with 6 workspaces (Kanban with drag-and-drop, List, Eisenhower Matrix, Calendar, SVG Analytics, Pomodoro timer with procedural audio synthesis). |
 | **[Positivus Landing Page](https://positivus-landing-page-zeta-one.vercel.app)** | [Live Preview](https://positivus-landing-page-zeta-one.vercel.app) | [aj0710/Positivus-Landing-page](https://github.com/aj0710/Positivus-Landing-page) | HTML5, CSS3 (Grid & Flexbox), Design Tokens, Responsive Design | Pixel-perfect, high-contrast digital marketing agency landing page with custom CSS custom properties, neon green branding, case studies, and lead capture form. |
+| **[Developer Portfolio](https://ajay-developer-portfolio.vercel.app/)** | [Live Preview](https://ajay-developer-portfolio.vercel.app/) | [aj0710/Personal-developer-portfolio](https://github.com/aj0710/Personal-developer-portfolio) | Semantic HTML5, CSS3 Tokens, Vanilla ES6+ JS, Vercel | High-performance developer portfolio showcasing responsive glassmorphism, interactive terminal, category filtering, case study modals, and automated CI/CD. |
 
 ---
 
@@ -130,7 +131,8 @@ d:\New folder\
 ├── assets/
 │   └── images/                 # Project showcase images & banners
 │       ├── taskflow-pro.jpg    # TaskFlow Pro Modern Task Suite Preview
-│       └── positivus.jpg       # Positivus Digital Marketing Agency Preview
+│       ├── positivus.jpg       # Positivus Digital Marketing Agency Preview
+│       └── portfolio.jpg       # Personal Developer Portfolio Showcase Preview
 │
 ├── css/
 │   └── style.css               # Complete design system, theme variables & styles
