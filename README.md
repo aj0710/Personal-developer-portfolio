@@ -8,14 +8,12 @@
 
 [![GitHub Profile](https://img.shields.io/badge/GitHub-aj0710-181717?style=flat&logo=github)](https://github.com/aj0710)
 [![GitHub Followers](https://img.shields.io/github/followers/aj0710?label=Followers&style=flat&logo=github&color=6366f1)](https://github.com/aj0710)
-[![Deploy to GitHub Pages](https://github.com/aj0710/test/actions/workflows/deploy.yml/badge.svg)](https://github.com/aj0710/test/actions/workflows/deploy.yml)
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-6366f1?style=flat&logo=github)](https://aj0710.github.io/test/)
-[![Vercel Ready](https://img.shields.io/badge/Deployment-Vercel-black?style=flat&logo=vercel)](https://vercel.com/)
+[![Live Demo on Vercel](https://img.shields.io/badge/Live%20Demo-Vercel-black?style=flat&logo=vercel)](https://ajay-developer-portfolio.vercel.app/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-emerald?style=flat)](LICENSE)
 
 <br />
 
-[Explore Live Demo](https://aj0710.github.io/test/) • [GitHub Profile](https://github.com/aj0710) • [Report Bug](https://github.com/aj0710/test/issues) • [Request Feature](https://github.com/aj0710/test/issues)
+[Explore Live Demo](https://ajay-developer-portfolio.vercel.app/) • [GitHub Profile](https://github.com/aj0710) • [GitHub Repository](https://github.com/aj0710/Personal-developer-portfolio)
 
 </div>
 
@@ -50,8 +48,8 @@ The portfolio is engineered with clean, modular **HTML5**, modern **Vanilla CSS3
 
 ## 🌐 Live Preview
 
-- **Live URL:** [https://aj0710.github.io/test/](https://aj0710.github.io/test/)
-- **GitHub Repository:** [https://github.com/aj0710/test](https://github.com/aj0710/test)
+- **Live URL (Vercel):** [https://ajay-developer-portfolio.vercel.app/](https://ajay-developer-portfolio.vercel.app/)
+- **GitHub Repository:** [https://github.com/aj0710/Personal-developer-portfolio](https://github.com/aj0710/Personal-developer-portfolio)
 - **GitHub Account:** [https://github.com/aj0710](https://github.com/aj0710)
 
 ---
@@ -252,7 +250,7 @@ Surat, Gujarat, India • MCA @ NIIS College, Bhubaneswar
 | 🐙 **GitHub Account** | **[@aj0710](https://github.com/aj0710)** | [github.com/aj0710](https://github.com/aj0710) • Repositories & open-source projects |
 | 💼 **LinkedIn Profile** | **[Ajay Nayak](https://www.linkedin.com/in/ajay-nayak-5a06a4397/)** | [linkedin.com/in/ajay-nayak-5a06a4397](https://www.linkedin.com/in/ajay-nayak-5a06a4397/) |
 | 📧 **Direct Email** | **[kumarajaya41685@gmail.com](mailto:kumarajaya41685@gmail.com)** | Job opportunities, freelance & inquiries |
-| 🌐 **Live Portfolio** | **[aj0710.github.io/test](https://aj0710.github.io/test/)** | Interactive portfolio website |
+| 🌐 **Live Portfolio** | **[ajay-developer-portfolio.vercel.app](https://ajay-developer-portfolio.vercel.app/)** | Live on Vercel |
 
 ---
 
