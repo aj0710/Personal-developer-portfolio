@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>Ajay Kumar Nayak | Full-Stack Developer (MERN & Next.js)</title>
+  <meta name="title" content="Ajay Kumar Nayak | Full-Stack Developer (MERN & Next.js)">
+  <meta name="description"
+    content="Portfolio of Ajay Kumar Nayak - Full-Stack Software Developer specializing in MERN Stack, Next.js, Java, SQL, and modern responsive web applications.">
+  <meta name="keywords"
+    content="Ajay Kumar Nayak, Full Stack Developer, MERN Stack, React, Next.js, Node.js, Express, MongoDB, Java, SQL, C++, Surat, Bhubaneswar, Portfolio">
+  <meta name="author" content="Ajay Kumar Nayak">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aj0710.github.io/test/">
+  <meta property="og:title" content="Ajay Kumar Nayak | Full-Stack Developer Portfolio">
+  <meta property="og:description"
+    content="Explore full-stack competencies, open-source GitHub projects (TaskFlow Pro & Positivus), Java & SQL architecture, and software credentials.">
+  <meta property="og:image" content="assets/images/taskflow-pro.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Ajay Kumar Nayak | Full-Stack Developer Portfolio">
+  <meta property="twitter:description"
+    content="Explore full-stack competencies, open-source GitHub projects (TaskFlow Pro & Positivus), Java & SQL architecture, and software credentials.">
+  <meta property="twitter:image" content="assets/images/taskflow-pro.jpg">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%236366f1'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='42' font-weight='800' fill='%23ffffff'>AKN</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Ambient Glow & Noise Background -->
+  <div class="bg-ambient-glow" aria-hidden="true">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="ambient-orb orb-3"></div>
+  </div>
+  <div class="bg-noise" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       Header & Navigation
+       ========================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Ajay Kumar Nayak Portfolio Home">
+        <div class="brand-mark">&lt;AKN/&gt;</div>
+        <span>Ajay<span class="text-gradient">.dev</span></span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#resume" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle dark/light theme"
+          title="Toggle Theme">
+          <!-- Sun Icon (Dark Mode) -->
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (Light Mode) -->
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-sm btn-resume">
+          Get in Touch
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button id="mobile-toggle-btn" class="mobile-toggle-btn" aria-label="Open mobile menu" aria-expanded="false"
+          aria-controls="mobile-drawer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop & Menu -->
+  <div class="mobile-drawer-backdrop" id="mobile-drawer-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <div>
+      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 2rem;">
+        <div class="brand-logo">
+          <div class="brand-mark">&lt;AKN/&gt;</div>
+          <span>Ajay<span class="text-gradient">.dev</span></span>
+        </div>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About Me</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#resume" class="mobile-nav-link">Education</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 1rem;">
+      <a href="#contact" class="btn btn-primary" style="width: 100%;">Contact Me</a>
+      <a href="https://github.com/aj0710" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"
+        style="width: 100%;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path
+            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+          </path>
+        </svg>
+        GitHub Profile
+      </a>
+      <a href="https://www.linkedin.com/in/ajay-nayak-5a06a4397/" target="_blank" rel="noopener noreferrer"
+        class="btn btn-outline" style="width: 100%;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+          <rect x="2" y="9" width="4" height="12"></rect>
+          <circle cx="4" cy="4" r="2"></circle>
+        </svg>
+        LinkedIn Profile
+      </a>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       Hero Section
+       ========================================================================== -->
+  <main>
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-info">
+          <div class="status-badge">
+            <span class="status-pulse" aria-hidden="true"></span>
+            <span>Open for Full-Stack &amp; Software Roles</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">Ajay Kumar Nayak</span>
+          </h1>
+
+          <div style="font-size: 1.3rem; font-weight: 600; margin-bottom: 1.25rem;">
+            I am a <span id="hero-typewriter" class="hero-typewriter-wrapper">Full-Stack Developer (MERN)</span>
+          </div>
+
+          <p class="hero-description">
+            Passionate software developer pursuing MCA at NIIS College, Bhubaneswar. Specialized in crafting responsive
+            full-stack applications with React, Next.js, Node.js, Express, and MongoDB, backed by strong fundamentals in
+            Java, SQL, C, and C++.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              View GitHub Projects
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              Contact Me
+            </a>
+            <a href="https://github.com/aj0710" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              GitHub Profile
+            </a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <span class="metric-number">GitHub</span>
+              <span class="metric-label">Live Open-Source Apps</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-number">MCA</span>
+              <span class="metric-label">NIIS College, Bhubaneswar</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-number">100%</span>
+              <span class="metric-label">Dedicated Learner</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Terminal Bento Card -->
+        <div class="hero-visual">
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <div class="terminal-dot dot-red"></div>
+                <div class="terminal-dot dot-yellow"></div>
+                <div class="terminal-dot dot-green"></div>
+              </div>
+              <div class="terminal-title">bash - ajay@surat-dev:~</div>
+              <div style="color: var(--text-muted); font-size: 0.75rem; font-family: var(--font-mono);">zsh</div>
+            </div>
+            <div class="terminal-body">
+              <div class="code-line"><span class="code-prompt">$</span> <span class="code-cmd">curl -s
+                  https://api.ajay.dev/info</span></div>
+              <div class="code-line code-comment">// Loading Ajay's developer telemetry...</div>
+              <div class="code-line"><span class="code-output">{</span></div>
+              <div class="code-line"><span class="code-output">&nbsp;&nbsp;"name": <span class="code-highlight">"Ajay
+                    Kumar Nayak"</span>,</span></div>
+              <div class="code-line"><span class="code-output">&nbsp;&nbsp;"location": <span
+                    class="code-highlight">"Surat, Gujarat, India"</span>,</span></div>
+              <div class="code-line"><span class="code-output">&nbsp;&nbsp;"education": <span
+                    class="code-highlight">"MCA - NIIS College, Bhubaneswar"</span>,</span></div>
+              <div class="code-line"><span class="code-output">&nbsp;&nbsp;"primaryStack": [<span
+                    class="code-accent">"React"</span>, <span class="code-accent">"Node.js"</span>, <span
+                    class="code-accent">"Express"</span>, <span class="code-accent">"MongoDB"</span>],</span></div>
+              <div class="code-line"><span class="code-output">&nbsp;&nbsp;"languages": [<span
+                    class="code-accent">"Java"</span>, <span class="code-accent">"SQL"</span>, <span
+                    class="code-accent">"C"</span>, <span class="code-accent">"C++"</span>, <span
+                    class="code-accent">"JavaScript"</span>],</span></div>
+              <div class="code-line"><span class="code-output">&nbsp;&nbsp;"status": <span
+                    class="code-highlight">"Available for Full-Stack Opportunities"</span></span></div>
+              <div class="code-line"><span class="code-output">}</span></div>
+              <div class="code-line" style="margin-top: 0.8rem;"><span class="code-prompt">$</span> <span
+                  class="code-cmd">git status -s</span></div>
+              <div class="code-line"><span class="code-output" style="color: var(--accent-emerald);">M &nbsp;Ready to
+                  build impactful web applications &bull; main</span></div>
+            </div>
+          </div>
+
+          <!-- Floating badges -->
+          <div class="floating-chip chip-1">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+            <span>MERN Stack + Next.js</span>
+          </div>
+
+          <div class="floating-chip chip-2">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald)" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <span>Java &amp; SQL Architecture</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         About Me Section
+         ========================================================================== -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Personal Background</span>
+          <h2 class="section-title">About <span class="text-gradient">Ajay Kumar Nayak</span></h2>
+          <p class="section-subtitle">Bridging practical full-stack development with solid core computer science
+            principles.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-bio-card">
+            <div>
+              <p class="bio-lead">
+                I am an aspiring Full-Stack Software Engineer with an MCA degree from NIIS College, Bhubaneswar,
+                currently based in Surat.
+              </p>
+              <p class="bio-paragraph">
+                My passion lies in building complete, real-world web applications—from designing responsive UI
+                components in React and Next.js, to engineering robust backend REST APIs in Node.js and Express, and
+                structuring relational database queries with SQL.
+              </p>
+              <p class="bio-paragraph">
+                With a rigorous foundation in C, C++, and Java, I value clean code structure, algorithmic problem
+                solving, and building intuitive user experiences that scale seamlessly.
+              </p>
+            </div>
+
+            <div class="bio-highlights">
+              <span class="bio-tag">📍 Surat, Gujarat, India</span>
+              <span class="bio-tag">🎓 MCA - NIIS College, Bhubaneswar</span>
+              <span class="bio-tag">⚡ Full-Stack MERN</span>
+              <span class="bio-tag">☕ Java &amp; SQL</span>
+            </div>
+          </div>
+
+          <!-- Bento Pillars Grid -->
+          <div class="about-pillars-grid">
+            <div class="pillar-card">
+              <div class="pillar-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 19 21 12 17 5 21 12 2"></polygon>
+                </svg>
+              </div>
+              <h3 class="pillar-title">Frontend Mastery</h3>
+              <p class="pillar-desc">Responsive layouts with modern JavaScript (ES6+), HTML5, CSS3,
+                and TailwindCSS for clean interactive experiences.</p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <h3 class="pillar-title">Backend &amp; APIs</h3>
+              <p class="pillar-desc">REST API development with Node.js and Express.js, featuring secure JWT
+                authentication, input validation, and middleware integration.</p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <h3 class="pillar-title">Database Design</h3>
+              <p class="pillar-desc">NoSQL schemas with MongoDB &amp; Mongoose, coupled with relational SQL database
+                queries, normalization, and relational schema modeling.</p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m18 16 4-4-4-4"></path>
+                  <path d="m6 8-4 4 4 4"></path>
+                  <path d="m14.5 4-5 16"></path>
+                </svg>
+              </div>
+              <h3 class="pillar-title">Core Fundamentals</h3>
+              <p class="pillar-desc">Strong foundation in Object-Oriented Programming (OOP) in Java &amp; C++, Data
+                Structures, and version control using Git and GitHub.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Skills & Tech Stack Section
+         ========================================================================== -->
+    <section id="skills" style="background: rgba(255, 255, 255, 0.01);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Skills &amp; Technologies</span>
+          <h2 class="section-title">Technical <span class="text-gradient">Skill Set</span></h2>
+          <p class="section-subtitle">A verified collection of programming languages, web libraries, and databases I
+            utilize to build modern software.</p>
+        </div>
+
+        <!-- Filter Navigation -->
+        <div class="skills-filter-nav">
+          <button class="filter-btn active" data-filter="all">All Skills</button>
+          <button class="filter-btn" data-filter="languages">Core Languages (C, C++, Java, SQL)</button>
+          <button class="filter-btn" data-filter="frontend">Frontend (HTML5, CSS3, Tailwind)</button>
+          <button class="filter-btn" data-filter="backend">Backend &amp; DB (Node, Express, Mongo)</button>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+          <!-- Skill: Java -->
+          <div class="skill-card" data-category="languages">
+            <div class="skill-header">
+              <div class="skill-icon-wrapper" style="color: #f89820;">☕</div>
+              <div class="skill-info">
+                <h4 class="skill-name">Java</h4>
+                <span class="skill-level-text">Core &amp; OOP Concepts</span>
+              </div>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 88%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-subtag">OOP</span>
+              <span class="skill-subtag">Collections</span>
+              <span class="skill-subtag">JDBC</span>
+            </div>
+          </div>
+
+          <!-- Skill: SQL / MySQL -->
+          <div class="skill-card" data-category="languages">
+            <div class="skill-header">
+              <div class="skill-icon-wrapper" style="color: #00758f;">🗄️</div>
+              <div class="skill-info">
+                <h4 class="skill-name">SQL / MySQL</h4>
+                <span class="skill-level-text">Relational Databases</span>
+              </div>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 85%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-subtag">Queries</span>
+              <span class="skill-subtag">Joins</span>
+              <span class="skill-subtag">Normalization</span>
+            </div>
+          </div>
+
+          <!-- Skill: C & C++ -->
+          <div class="skill-card" data-category="languages">
+            <div class="skill-header">
+              <div class="skill-icon-wrapper" style="color: #00599c;">💻</div>
+              <div class="skill-info">
+                <h4 class="skill-name">C &amp; C++</h4>
+                <span class="skill-level-text">Fundamentals &amp; DSA</span>
+              </div>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 82%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-subtag">Data Structures</span>
+              <span class="skill-subtag">Pointers</span>
+              <span class="skill-subtag">Memory Mgmt</span>
+            </div>
+          </div>
+
+          <!-- Skill: JavaScript (ES6+) -->
+          <div class="skill-card" data-category="languages">
+            <div class="skill-header">
+              <div class="skill-icon-wrapper" style="color: #f7df1e;">JS</div>
+              <div class="skill-info">
+                <h4 class="skill-name">JavaScript (ES6+)</h4>
+                <span class="skill-level-text">Advanced Concepts</span>
+              </div>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 90%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-subtag">Async / Await</span>
+              <span class="skill-subtag">DOM</span>
+              <span class="skill-subtag">Fetch API</span>
+            </div>
+          </div>
+
+
+          <!-- Skill: Node.js & Express.js -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-header">
+              <div class="skill-icon-wrapper" style="color: #339933;">🟢</div>
+              <div class="skill-info">
+                <h4 class="skill-name">Node.js &amp; Express.js</h4>
+                <span class="skill-level-text">RESTful Backend APIs</span>
+              </div>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 88%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-subtag">REST APIs</span>
+              <span class="skill-subtag">JWT Auth</span>
+              <span class="skill-subtag">Middleware</span>
+            </div>
+          </div>
+
+          <!-- Skill: MongoDB -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-header">
+              <div class="skill-icon-wrapper" style="color: #47a248;">🍃</div>
+              <div class="skill-info">
+                <h4 class="skill-name">MongoDB</h4>
+                <span class="skill-level-text">NoSQL Database</span>
+              </div>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 88%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-subtag">Mongoose</span>
+              <span class="skill-subtag">Aggregation</span>
+              <span class="skill-subtag">CRUD</span>
+            </div>
+          </div>
+
+          <!-- Skill: HTML5, CSS3, Tailwind -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-header">
+              <div class="skill-icon-wrapper" style="color: #38bdf8;">🎨</div>
+              <div class="skill-info">
+                <h4 class="skill-name">HTML5, CSS3 &amp; Tailwind</h4>
+                <span class="skill-level-text">Responsive Design</span>
+              </div>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 95%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-subtag">Flexbox / Grid</span>
+              <span class="skill-subtag">TailwindCSS</span>
+              <span class="skill-subtag">Dark Mode</span>
+            </div>
+          </div>
+
+          <!-- Skill: Git & GitHub -->
+          <div class="skill-card" data-category="languages">
+            <div class="skill-header">
+              <div class="skill-icon-wrapper" style="color: #f05032;">🐙</div>
+              <div class="skill-info">
+                <h4 class="skill-name">Git &amp; GitHub</h4>
+                <span class="skill-level-text">Version Control &amp; Collab</span>
+              </div>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 90%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-subtag">Git Branching</span>
+              <span class="skill-subtag">Commits</span>
+              <span class="skill-subtag">Open Source</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- ==========================================================================
+         GitHub Projects Showcase Section
+         ========================================================================== -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">GitHub Repositories</span>
+          <h2 class="section-title">My GitHub <span class="text-gradient">Projects</span></h2>
+          <p class="section-subtitle">Real-world open-source applications built with modern JavaScript, CSS architecture, and deployed live.</p>
+        </div>
+
+        <!-- Filter Navigation -->
+        <div class="projects-filter-nav">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="apps">Web Apps &amp; Tools</button>
+          <button class="filter-btn" data-filter="frontend">Frontend &amp; UI</button>
+        </div>
+
+        <!-- Dynamic Projects Grid (Injected via js/main.js & js/projects-data.js) -->
+        <div class="projects-grid" id="projects-grid"></div>
+
+        <!-- GitHub Profile Banner -->
+        <div style="margin-top: 3.5rem; text-align: center; padding: 2rem; border-radius: var(--radius-xl); background: var(--bg-card); border: 1px solid var(--border-subtle);">
+          <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem;">Explore More on GitHub</h3>
+          <p style="color: var(--text-secondary); max-width: 550px; margin: 0 auto 1.5rem;">Check out my repositories, source code commits, and project branches on GitHub at <strong style="color: var(--text-primary);">@aj0710</strong>.</p>
+          <a href="https://github.com/aj0710" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+            Visit github.com/aj0710
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Education & Credentials Section
+         ========================================================================== -->
+    <section id="resume" style="background: rgba(255, 255, 255, 0.01);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Credentials</span>
+          <h2 class="section-title">Education &amp; <span class="text-gradient">Journey</span></h2>
+          <p class="section-subtitle">Academic qualifications and hands-on software development milestones.</p>
+        </div>
+
+        <div class="resume-grid">
+          <!-- Education Column -->
+          <div>
+            <h3 class="resume-column-title">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+              Academic Background
+            </h3>
+
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                  <span class="timeline-period">MCA Program</span>
+                  <h4 class="timeline-role">Master of Computer Applications (MCA)</h4>
+                  <div class="timeline-company">NIIS College &bull; Bhubaneswar, Odisha</div>
+                  <ul class="timeline-achievements">
+                    <li>Specialization in Advanced Computer Applications, Database Management Systems, and Software
+                      Engineering.</li>
+                    <li>Hands-on coursework covering Object-Oriented Programming (Java, C++), Data Structures, and
+                      Relational SQL.</li>
+                    <li>Developed full-stack web applications incorporating modern frontend libraries and backend databases.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                  <span class="timeline-period">Undergraduate</span>
+                  <h4 class="timeline-role">Bachelor&apos;s Degree / Computer Science Focus</h4>
+                  <div class="timeline-company">Foundation in Computer Science &bull; India</div>
+                  <ul class="timeline-achievements">
+                    <li>Core fundamentals in C Programming, Mathematics for Computing, and Operating Systems.</li>
+                    <li>Built foundational algorithms and completed programming assignments with distinction.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills & Development Journey Column -->
+          <div>
+            <h3 class="resume-column-title">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+              Practical Experience &amp; Development
+            </h3>
+
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot" style="border-color: var(--accent-secondary);"></div>
+                <div class="timeline-card">
+                  <span class="timeline-period">Hands-On Development</span>
+                  <h4 class="timeline-role">Full-Stack Web Development</h4>
+                  <div class="timeline-company">Open-Source &amp; Academic Projects</div>
+                  <ul class="timeline-achievements">
+                    <li>Engineered live GitHub applications including <strong>TaskFlow Pro</strong> (6-workspace productivity suite) and <strong>Positivus</strong> (responsive agency landing page).</li>
+                    <li>Implemented clean modular architectures with ES6+ JavaScript, Web Audio API, Canvas rendering, and modern CSS3.</li>
+                    <li>Active version control workflows maintaining repositories, commits, and deployments on GitHub and Vercel.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot" style="border-color: var(--accent-secondary);"></div>
+                <div class="timeline-card">
+                  <span class="timeline-period">Core Strengths</span>
+                  <h4 class="timeline-role">Software Engineering Competencies</h4>
+                  <div class="timeline-company">C, C++, Java &amp; SQL Mastery</div>
+                  <p style="font-size: 0.9rem; margin-top: 0.5rem; color: var(--text-secondary);">
+                    Strong grasp of Object-Oriented design principles, normalization of relational database tables, and
+                    responsive mobile-first UI development.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Download Banner -->
+        <div class="resume-download-banner">
+          <h3 style="font-size: 1.5rem;">Interested in hiring Ajay Kumar Nayak?</h3>
+          <p style="max-width: 600px; color: var(--text-secondary);">
+            I am actively looking for Full-Stack Developer, Junior Software Engineer, or MERN Stack opportunities in
+            Surat or remote across India.
+          </p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+            <a href="#contact" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+              Contact Ajay
+            </a>
+            <a href="https://github.com/aj0710" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              Check GitHub Profile
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Contact Section
+         ========================================================================== -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Get In Touch</span>
+          <h2 class="section-title">Let&apos;s Connect &amp; <span class="text-gradient">Collaborate</span></h2>
+          <p class="section-subtitle">Feel free to reach out directly regarding job opportunities, freelance work, or
+            technical discussions.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Cards Info -->
+          <div class="contact-info-list">
+            <div class="contact-card">
+              <div class="contact-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+              </div>
+              <div style="flex: 1;">
+                <div class="contact-card-label">Direct Email</div>
+                <div class="contact-card-value">
+                  <span style="font-size: 0.95rem; word-break: break-all;">kumarajaya41685@gmail.com</span>
+                  <button id="copy-email-btn" class="copy-badge" aria-label="Copy email address"
+                    title="Copy to clipboard">Copy</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-card-label">Location</div>
+                <div class="contact-card-value">Surat, Gujarat, India</div>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-card-label">LinkedIn Profile</div>
+                <a href="https://www.linkedin.com/in/ajay-nayak-5a06a4397/" target="_blank" rel="noopener noreferrer"
+                  class="contact-card-value" style="color: var(--accent-primary);">
+                  Connect on LinkedIn &rarr;
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                  </path>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-card-label">GitHub Profile</div>
+                <a href="https://github.com/aj0710" target="_blank" rel="noopener noreferrer" class="contact-card-value"
+                  style="color: var(--accent-secondary);">
+                  github.com/aj0710 &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-card">
+            <form id="portfolio-contact-form" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">Your Name *</label>
+                  <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Rahul Sharma"
+                    required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Email Address *</label>
+                  <input type="email" id="contact-email" name="email" class="form-input" placeholder="rahul@company.com"
+                    required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Inquiry Purpose</label>
+                <select id="contact-subject" name="subject" class="form-select">
+                  <option value="opportunity">Full-time Job Opportunity</option>
+                  <option value="internship">Internship / Junior Role</option>
+                  <option value="freelance">Freelance Web Project</option>
+                  <option value="connect">General Tech Chat &amp; Networking</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message / Details *</label>
+                <textarea id="contact-message" name="message" class="form-textarea"
+                  placeholder="Hi Ajay, I came across your portfolio and would like to discuss..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+  <!-- ==========================================================================
+       Project Details Modal
+       ========================================================================== -->
+  <div class="modal-overlay" id="project-modal-overlay" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close project modal">&times;</button>
+      <img src="" alt="" class="modal-banner" id="modal-banner">
+      <div class="modal-body">
+        <div class="modal-header-meta">
+          <span class="section-badge" id="modal-badge">Architecture Spec</span>
+        </div>
+        <h2 class="modal-title" id="modal-title">Project Title</h2>
+        <p id="modal-overview"
+          style="font-size: 1.05rem; line-height: 1.7; margin-bottom: 1.5rem; color: var(--text-secondary);"></p>
+
+        <h4 class="modal-section-title">The Challenge &amp; Problem Solved</h4>
+        <p id="modal-problem" style="line-height: 1.6; margin-bottom: 1.5rem; color: var(--text-secondary);"></p>
+
+        <h4 class="modal-section-title">System Architecture Decisions</h4>
+        <ul class="modal-feature-list" id="modal-architecture"></ul>
+
+        <h4 class="modal-section-title">Key Capabilities</h4>
+        <ul class="modal-feature-list" id="modal-features"></ul>
+
+        <h4 class="modal-section-title">Technology Stack</h4>
+        <div class="project-tech-stack" id="modal-tech-stack"></div>
+
+        <div class="modal-actions-bar">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="modal-demo-link">
+            Launch Live Demo
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="modal-github-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+              </path>
+            </svg>
+            Review GitHub Repository
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Scroll To Top Button -->
+  <button id="scroll-top-btn" class="scroll-top-btn" aria-label="Scroll to top of page" title="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#hero" class="brand-logo">
+          <div class="brand-mark">&lt;AKN/&gt;</div>
+          <span>Ajay<span class="text-gradient">.dev</span></span>
+        </a>
+
+        <div class="footer-social-links">
+          <a href="https://github.com/aj0710" target="_blank" rel="noopener noreferrer" class="btn-icon"
+            aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+              </path>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/ajay-nayak-5a06a4397/" target="_blank" rel="noopener noreferrer"
+            class="btn-icon" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <a href="mailto:kumarajaya41685@gmail.com" class="btn-icon" aria-label="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year">2026</span> Ajay Kumar Nayak &bull; Built with Semantic HTML5, CSS3 &amp;
+          Vanilla ES6+ JavaScript.
+        </div>
+        <div style="font-family: var(--font-mono); font-size: 0.8rem;">
+          Surat, Gujarat &bull; NIIS College, Bhubaneswar
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/projects-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
